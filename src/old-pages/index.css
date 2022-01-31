@@ -1,7 +1,7 @@
 *,
 *:before,
 *:after {
-  padding:0;
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
@@ -18,39 +18,38 @@ body {
 
 @keyframes fadeInAnimation {
   0% {
-      opacity: 0;
-      top: -50px;
-      font-weight:700;
-      font-size: 160px;
-      letter-spacing: 2px;
-      animation-delay: 2s;
-    }
+    opacity: 0;
+    top: -50px;
+    font-weight: 700;
+    font-size: 160px;
+    letter-spacing: 2px;
+    animation-delay: 2s;
+  }
   100% {
-      opacity: 1;
-      top: 0;
-      font-weight:700;
-      font-size: 160px;
-      letter-spacing: 2px;
-   }
+    opacity: 1;
+    top: 0;
+    font-weight: 700;
+    font-size: 160px;
+    letter-spacing: 2px;
+  }
 }
 
 @keyframes fadeInAnimationEU {
   0% {
-
-      opacity: 1;
-      left: 160px;      
-      font-weight:700;
-      font-size: 160px;
-      letter-spacing: 2px;
-    }
+    opacity: 1;
+    left: 160px;
+    font-weight: 700;
+    font-size: 160px;
+    letter-spacing: 2px;
+  }
   100% {
-      opacity: 1;
-      left: 0px; 
-      top: 0;
-      font-weight:700;
-      font-size: 160px;
-      letter-spacing: 2px;
-   }
+    opacity: 1;
+    left: 0px;
+    top: 0;
+    font-weight: 700;
+    font-size: 160px;
+    letter-spacing: 2px;
+  }
 }
 
 .outer {
@@ -70,7 +69,7 @@ body {
   font-size: 26px;
   display: flex;
   align-items: flex-end;
-  transition: .25s;
+  transition: 0.25s;
   /* background-color: gray; */
 }
 .nav-first {
@@ -80,7 +79,7 @@ body {
   align-items: flex-end;
   position: relative;
   left: 100px;
-  color: #404040;  
+  color: #404040;
 }
 .nav-last {
   width: 240px;
@@ -97,60 +96,62 @@ a {
   letter-spacing: 3px;
 }
 .euka {
-  font-weight: bolder ;
+  font-weight: bolder;
   font-size: 40px;
-  transition: .3s;
+  transition: 0.3s;
 }
 .euka:hover {
   color: rgb(31, 31, 31);
-
 }
 
-.shop:after, .shoecare:after, .nav-contact:after, .sign-up:after, .login:after {
-  content:'';
+.shop:after,
+.shoecare:after,
+.nav-contact:after,
+.sign-up:after,
+.login:after {
+  content: "";
   position: absolute;
   background-color: rgb(187, 187, 187);
   height: 1px;
   width: 0%;
   bottom: -2px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.shop:after{
-  left:160px;
+.shop:after {
+  left: 160px;
 }
-.shop:hover:after{
+.shop:hover:after {
   width: 73px;
 }
 
-.shoecare:after{
-  left:280px;
+.shoecare:after {
+  left: 280px;
 }
-.shoecare:hover:after{
+.shoecare:hover:after {
   width: 125px;
 }
 
-.nav-contact:after{
-  left:450px;
+.nav-contact:after {
+  left: 450px;
 }
-.nav-contact:hover:after{
+.nav-contact:hover:after {
   width: 115px;
 }
 
-.sign-up:after{
+.sign-up:after {
   left: -2px;
 }
-.sign-up:hover:after{
+.sign-up:hover:after {
   width: 100px;
 }
 
-.login:after{
+.login:after {
   left: 166px;
 }
-.login:hover:after{
+.login:hover:after {
   width: 75px;
 }
-
 
 /* nav scrolled */
 .nav.sticky {
@@ -165,7 +166,7 @@ a {
 .span-image {
   width: 100vw;
   height: 1010px;
-  background-image: url("./images/picture.png");
+  background-image: url("../assets/images/picture.png");
   background-size: cover;
   background-position: bottom;
   background-repeat: none;
@@ -192,7 +193,7 @@ a {
 .eureka {
   display: flex;
   justify-content: flex-end;
-  font-weight:700;
+  font-weight: 700;
   font-size: 160px;
   letter-spacing: 2px;
   position: relative;
@@ -209,14 +210,13 @@ a {
 
 .r {
   transition: 4s;
-  animation: fadeInAnimation  2s;
+  animation: fadeInAnimation 2s;
   animation-iteration-count: 1;
 }
 .e {
   transition: 3s;
-  animation: fadeInAnimation  2s;
+  animation: fadeInAnimation 2s;
   animation-iteration-count: 1;
-
 }
 /* .k {
   transition: 2s;
@@ -249,11 +249,13 @@ a {
   width: 100vw;
   height: 743px;
   display: flex;
-justify-content: center;
+  justify-content: center;
   align-items: center;
 }
 
-.shop-women-image, .shop-men-image, .who-we-are-image {
+.shop-women-image,
+.shop-men-image,
+.who-we-are-image {
   width: 320px;
   height: 459px;
   background-size: cover;
@@ -261,7 +263,9 @@ justify-content: center;
   background-repeat: none;
 }
 
-.shop-women-text, .shop-men-text, .who-we-are-text {
+.shop-women-text,
+.shop-men-text,
+.who-we-are-text {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -271,23 +275,25 @@ justify-content: center;
   font-size: 18px;
 }
 
-.shop-women-button, .shop-men-button, .who-we-are-button {
+.shop-women-button,
+.shop-men-button,
+.who-we-are-button {
   width: 100%;
   display: flex;
   justify-content: flex-start;
   font-size: 16px;
   letter-spacing: 0px;
-  border-bottom: 1px solid rgb(99, 99, 99,) ;
+  border-bottom: 1px solid rgb(99, 99, 99);
 }
 
 .shop-women-image {
-  background-image: url("./images/Capture-fix.PNG");
+  background-image: url("../assets/images/Capture-fix.PNG");
 }
 .shop-men-image {
-  background-image: url("./images/6925962f_153d\ \(2\).jpg");
+  background-image: url("../assets/images/6925962f_153d\ \(2\).jpg");
 }
 .who-we-are-image {
-  background-image: url("./images/Journal_Our_Journey_400x.jpg");
+  background-image: url("../assets/images/Journal_Our_Journey_400x.jpg");
 }
 
 /* best sellers */
@@ -309,27 +315,30 @@ justify-content: center;
   flex-wrap: wrap;
 }
 
-.first-option-image, .second-option-image, .third-option-image {
-width: 547px;
-height: 657px;
-background-size: cover;
-background-position: bottom;
-background-repeat: none;
+.first-option-image,
+.second-option-image,
+.third-option-image {
+  width: 547px;
+  height: 657px;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
 }
 .first-option-image {
-  background-image: url("./images/Capture.PNG");
+  background-image: url("../assets/images/Capture.PNG");
 }
 .second-option-image {
-  background-image: url("./images/Capture3.PNG");
+  background-image: url("../assets/images/Capture3.PNG");
 }
 .third-option-image {
-  background-image: url("./images/Capture\ 2.PNG");
+  background-image: url("../assets/images/Capture\ 2.PNG");
 }
-#first-option-text, .second-option-text, .third-option-text {
+#first-option-text,
+.second-option-text,
+.third-option-text {
   width: 547px;
   height: 160px;
 }
-
 
 /* shoecare and locations */
 .outer-shoecare-locations {
@@ -340,10 +349,10 @@ background-repeat: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
-.shoecare-image, .location-image {
+.shoecare-image,
+.location-image {
   width: 881px;
   height: 606px;
   background-size: cover;
@@ -352,18 +361,20 @@ background-repeat: none;
 }
 
 .shoecare-image {
-  background-image: url("./images/Capture\ 4.PNG");
+  background-image: url("../assets/images/Capture\ 4.PNG");
 }
 
 .location-image {
-  background-image: url("./images/Capture5.PNG");
+  background-image: url("../assets/images/Capture5.PNG");
 }
 
-.shoecare-text, .location-text {
+.shoecare-text,
+.location-text {
   width: 881px;
   height: 156px;
 }
-.find-store, #shoecare-button {
+.find-store,
+#shoecare-button {
   width: 881px;
   height: 50px;
   letter-spacing: 0px;
@@ -372,15 +383,16 @@ background-repeat: none;
 /* bottom */
 
 .outer-bottom {
-  background-color: #20254B;
+  background-color: #20254b;
   width: 100%;
   height: 919px;
   padding: 95px 132px 0px 132px;
   display: flex;
-  
 }
 
-.customer-care-text, .our-world-text, .follow-text {
+.customer-care-text,
+.our-world-text,
+.follow-text {
   width: 33%;
   height: 800px;
   color: white;
