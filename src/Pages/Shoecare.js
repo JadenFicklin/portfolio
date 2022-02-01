@@ -1,19 +1,12 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import Nav from "./Nav";
 
 function Shoecare() {
-  let navigate = useNavigate();
   return (
-    <div>
-      THIS IS THE SHOECARE PAGE
-      <button
-        onClick={() => {
-          navigate("/about");
-        }}
-      >
-        Change to about page
-      </button>
-    </div>
+    <>
+      <Nav />
+      <div>THIS IS THE SHOECARE PAGE</div>
+    </>
   );
 }
 
