@@ -4,6 +4,7 @@ import Shop from "./Pages/Shop";
 import Shoecare from "./Pages/Shoecare";
 import Signup from "./Pages/Signup";
 import Login from "./Pages/Login";
+import Checkout from "./Pages/Checkout";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/shoecare" element={<Shoecare />} />
         <Route path="/Signup" element={<Signup />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/Checkout" element={<Checkout />} />
       </Routes>
     </Router>
   );
