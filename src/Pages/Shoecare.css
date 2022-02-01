@@ -1,3 +1,70 @@
-.shoecare-text {
-  color: red;
+.shoecare-outer {
+  width: 100%;
+  height: 1659px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shoecare-outer-four-images-container {
+  width: 1237px;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.shoecare-shoe {
+  height: 822px;
+  width: 614px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+}
+.shoecare-image-one {
+  background-image: url("../assets/images/3.PNG");
+}
+.shoecare-image-two {
+  background-image: url("../assets/images/2.PNG");
+}
+.shoecare-image-three {
+  background-image: url("../assets/images/4.PNG");
+}
+.shoecare-image-four {
+  background-image: url("../assets/images/5.PNG");
+}
+.shoecare-item-info {
+  width: 487px;
+  height: 106px;
+  font-size: 30px;
+}
+.shoecare-outer-input {
+  width: 665px;
+  height: 100%;
+  padding: 219px 73px 375px 73px;
+}
+.shoecare-input-box {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width: 514px;
+  height: 62px;
+  font-size: 25px;
+  padding-left: 10px;
+  color: rgb(160, 160, 160);
+}
+
+.first-name,
+.last-name,
+.country,
+.state,
+.zip {
+  width: 249px;
+}
+.last-name,
+.state {
+  margin-left: 16px;
+}
+.city {
+  width: 300px;
 }
