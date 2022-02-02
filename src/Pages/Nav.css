@@ -16,12 +16,17 @@ button {
 .nav {
   position: fixed;
   top: 0px;
-  width: 100%;
+  width: calc(100% - 20px);
   height: 65px;
   font-size: 26px;
   display: flex;
   align-items: flex-end;
   transition: 0.25s;
+  z-index: 1;
+  color: inherit;
+  margin: 10px;
+  display: flex;
+  align-items: center;
 }
 .nav-first {
   width: 560px;
@@ -30,7 +35,9 @@ button {
   align-items: flex-end;
   position: relative;
   left: 100px;
-  color: #404040;
+  color: inherit;
+  display: flex;
+  align-items: center;
 }
 .nav-last {
   width: 240px;
@@ -38,12 +45,14 @@ button {
   justify-content: space-between;
   position: relative;
   left: 30%;
-  color: #404040;
+  color: inherit;
+  display: flex;
+  align-items: center;
 }
 a {
   font-weight: 100;
   text-decoration: none;
-  color: #404040;
+  color: inherit;
   letter-spacing: 3px;
 }
 .euka {
@@ -51,9 +60,6 @@ a {
   font-size: 40px;
   transition: 0.3s;
   letter-spacing: 2px;
-}
-.euka:hover {
-  color: rgb(31, 31, 31);
 }
 
 /* nav scrolled */

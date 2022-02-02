@@ -1,27 +1,31 @@
 import "./Shoecare.css";
 import React from "react";
 import Nav from "./Nav";
+import { useEffect } from "react";
 
 function Shoecare() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Nav />
-      <div class="shoecare-outer">
-        <div class="shoecare-span-image">
-          <div class="shoecare-image-span-text">Shoecare Solutions</div>
+      <div className="shoecare-outer">
+        <div className="shoecare-span-image">
+          <div className="shoecare-image-span-text">Shoecare Solutions</div>
         </div>
-        <div class="shoecare-text-outer">
-          <div class="shoecare-text-one"></div>
-          <div class="shoecare-text-two"></div>
+        <div className="shoecare-text-outer">
+          <div className="shoecare-text-one"></div>
+          <div className="shoecare-text-two"></div>
         </div>
-        <div class="shoecare-bottom-outer">
-          <div class="shoecare-bottom-left-picture"></div>
-          <div class="shoecare-bottom-right-container-outer">
-            <div class="shoecare-bottom-right-containers-text">
-              <div class="shoecare-text-bottom"></div>
+        <div className="shoecare-bottom-outer">
+          <div className="shoecare-bottom-left-picture"></div>
+          <div className="shoecare-bottom-right-container-outer">
+            <div className="shoecare-bottom-right-containers-text">
+              <div className="shoecare-text-bottom"></div>
             </div>
-            <div class="shoecare-bottom-right-containers-bottom-left-picture"></div>
-            <div class="shoecare-bottom-right-containers-bottom-right-picture"></div>
+            <div className="shoecare-bottom-right-containers-bottom-left-picture"></div>
+            <div className="shoecare-bottom-right-containers-bottom-right-picture"></div>
           </div>
         </div>
       </div>

@@ -2,25 +2,29 @@ import "./Home.css";
 import React from "react";
 import Nav from "./Nav";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Nav />
-      <div class="outer">
+      <div className="outer">
         {/* span image */}
-        <div class="span-image">
-          <div class="image-span-text">
-            <span class="you-shop">Footware, made for you</span>
-            <span class="eureka">
-              <span class="eu">Eu</span>
-              <span class="r">r</span>
-              <span class="e">e</span>
-              <span class="k">k</span>
-              <span class="a">a</span>
+        <div className="span-image">
+          <div className="image-span-text">
+            <span className="you-shop">Footware, made for you</span>
+            <span className="eureka">
+              <span className="eu">Eu</span>
+              <span className="r">r</span>
+              <span className="e">e</span>
+              <span className="k">k</span>
+              <span className="a">a</span>
             </span>
             <Link to="/Shop">
-              <button class="span-button">SHOP NOW</button>
+              <button className="span-button">SHOP NOW</button>
             </Link>
           </div>
         </div>
@@ -28,52 +32,52 @@ function Home() {
         {/* <!-- shop women, shop men, about us --> */}
         <div id="outer-shop">
           <Link to="/Shop">
-            <div class="shop-women-image"></div>
+            <div className="shop-women-image"></div>
           </Link>
-          <div class="shop-women-text">
+          <div className="shop-women-text">
             Shop for Women
             <Link to="/Shop">
-              <a class="shop-women-button">Shop now</a>
+              <a className="shop-women-button">Shop now</a>
             </Link>
             <Link to="/Shop"></Link>
           </div>
           <Link to="/Shop">
-            <div class="shop-men-image"></div>
+            <div className="shop-men-image"></div>
           </Link>
-          <div class="shop-men-text">
+          <div className="shop-men-text">
             Shop for Men
             <Link to="/Shop">
-              <a class="shop-men-button">Shop now</a>
+              <a className="shop-men-button">Shop now</a>
             </Link>
           </div>
           <Link to="/Shoecare">
-            <div class="who-we-are-image"></div>
+            <div className="who-we-are-image"></div>
           </Link>
-          <div class="who-we-are-text">
+          <div className="who-we-are-text">
             Shoecare solutions
             <Link to="/Shoecare">
-              <a class="who-we-are-button">Shop now</a>
+              <a className="who-we-are-button">Shop now</a>
             </Link>
           </div>
         </div>
 
         {/* <!-- our best sellers --> */}
-        <div class="our-best-sellers">Our best sellers</div>
-        <div class="outer-best-sellers">
-          <div class="first-option-image"></div>
-          <div class="second-option-image"></div>
-          <div class="third-option-image"></div>
+        <div className="our-best-sellers">Our best sellers</div>
+        <div className="outer-best-sellers">
+          <div className="first-option-image"></div>
+          <div className="second-option-image"></div>
+          <div className="third-option-image"></div>
           <div id="first-option-text">
             Metal-free tanned leather <br />
             LT 01 VEGEA White <br />
             $229
           </div>
-          <div class="second-option-text">
+          <div className="second-option-text">
             Metal-free tanned leather <br />
             LT 01 All Black <br />
             $249
           </div>
-          <div class="third-option-text">
+          <div className="third-option-text">
             Metal-free tanned leather <br />
             LT 01 Court Lite White / Sand <br />
             $189
@@ -81,55 +85,55 @@ function Home() {
         </div>
 
         {/* <!-- shoecare and locations --> */}
-        <div class="outer-shoecare-locations">
+        <div className="outer-shoecare-locations">
           <Link to="/About">
-            <div class="shoecare-image"></div>
+            <div className="shoecare-image"></div>
           </Link>
           <Link to="/About">
-            <div class="location-image"></div>
+            <div className="location-image"></div>
           </Link>
-          <div class="shoecare-text">
+          <div className="shoecare-text">
             Who we are, our journey explained
             <Link to="/About">
-              <div class="shoecare-btn">
+              <div className="shoecare-btn">
                 <a id="shoecare-button">Read</a>
               </div>
             </Link>
           </div>
-          <div class="location-text">
+          <div className="location-text">
             locations
-            <div class="store-btn">
+            <div className="store-btn">
               <Link to="/About">
-                <a class="find-store">Find store</a>
+                <a className="find-store">Find store</a>
               </Link>
             </div>
           </div>
         </div>
 
         {/* <!-- bottom of page --> */}
-        <div class="outer-bottom">
-          <div class="customer-care-text">
-            <div class="bottom-text-header">Customer Care</div>
-            <div class="bottom-text">Shipping and returns</div>
-            <div class="bottom-text">Contact us</div>
-            <div class="bottom-text">FAQ's</div>
-            <div class="bottom-text">Size guide</div>
-            <div class="bottom-text">Retailers</div>
-            <div class="bottom-text">WholeSale</div>
-            <div class="bottom-text">AfterPay</div>
-            <div class="bottom-text">Legal & privacy</div>
+        <div className="outer-bottom">
+          <div className="customer-care-text">
+            <div className="bottom-text-header">Customer Care</div>
+            <div className="bottom-text">Shipping and returns</div>
+            <div className="bottom-text">Contact us</div>
+            <div className="bottom-text">FAQ's</div>
+            <div className="bottom-text">Size guide</div>
+            <div className="bottom-text">Retailers</div>
+            <div className="bottom-text">WholeSale</div>
+            <div className="bottom-text">AfterPay</div>
+            <div className="bottom-text">Legal & privacy</div>
           </div>
-          <div class="our-world-text">
-            <div class="bottom-text-header">Our World</div>
-            <div class="bottom-text">About us</div>
-            <div class="bottom-text">Ethics & sustainability</div>
-            <div class="bottom-text">Giving back</div>
+          <div className="our-world-text">
+            <div className="bottom-text-header">Our World</div>
+            <div className="bottom-text">About us</div>
+            <div className="bottom-text">Ethics & sustainability</div>
+            <div className="bottom-text">Giving back</div>
           </div>
-          <div class="follow-text">
-            <div class="bottom-text-header">Follow</div>
-            <div class="bottom-text">Instagram</div>
-            <div class="bottom-text">Facebook</div>
-            <div class="bottom-text">Newsletter</div>
+          <div className="follow-text">
+            <div className="bottom-text-header">Follow</div>
+            <div className="bottom-text">Instagram</div>
+            <div className="bottom-text">Facebook</div>
+            <div className="bottom-text">Newsletter</div>
           </div>
         </div>
 

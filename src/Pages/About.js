@@ -1,17 +1,21 @@
 import "./About.css";
 import React from "react";
 import Nav from "./Nav";
+import { useEffect } from "react";
 
 function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
-      <Nav />
-      <div class="about-outer">
-        <div class="about-span-image">
-          <div class="about-image-span-text">Our Journey explained</div>
+      <Nav light={true} />
+      <div className="about-outer">
+        <div className="about-span-image">
+          <div className="about-image-span-text">Our Journey explained</div>
         </div>
-        <div class="about-text-one-outer">
-          <div class="about-text-one">
+        <div className="about-text-one-outer">
+          <div className="about-text-one">
             text goes here <br></br>
             <br></br>Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -20,19 +24,19 @@ function About() {
             remaining essentially unchanged.
           </div>
         </div>
-        <div class="about-pictures-one-and-two-outer">
-          <div class="about-picture-one"></div>
-          <div class="about-picture-two"></div>
+        <div className="about-pictures-one-and-two-outer">
+          <div className="about-picture-one"></div>
+          <div className="about-picture-two"></div>
         </div>
-        <div class="about-pictures-three-and-four-outer">
-          <div class="about-picture-three">
-            <div class="about-inner-picture-three"></div>
+        <div className="about-pictures-three-and-four-outer">
+          <div className="about-picture-three">
+            <div className="about-inner-picture-three"></div>
           </div>
-          <div class="about-picture-four"></div>
+          <div className="about-picture-four"></div>
         </div>
-        <div class="about-text-two-outer">
-          <div class="about-text-two">
-            <span class="fashion">It’s not fashion. It’s design.</span>
+        <div className="about-text-two-outer">
+          <div className="about-text-two">
+            <span className="fashion">It’s not fashion. It’s design.</span>
             <br></br>
             <br></br>The difference between the two, for us, is about change
             versus improvement. Being just different is very simple. Being
@@ -43,17 +47,17 @@ function About() {
             everyday-sneakers.
           </div>
         </div>
-        <div class="about-picture-five"></div>
-        <div class="about-pictures-six-and-seven-outer">
-          <div class="about-picture-six">
-            <div class="about-picture-six-inner"></div>
+        <div className="about-picture-five"></div>
+        <div className="about-pictures-six-and-seven-outer">
+          <div className="about-picture-six">
+            <div className="about-picture-six-inner"></div>
           </div>
-          <div class="about-picture-seven"></div>
+          <div className="about-picture-seven"></div>
         </div>
-        <div class="locations-text">Locations</div>
-        <div class="locations-picture"></div>
-        <div class="locations-lower-text-outer">
-          <div class="locations-lower-text-inner">
+        <div className="locations-text">Locations</div>
+        <div className="locations-picture"></div>
+        <div className="locations-lower-text-outer">
+          <div className="locations-lower-text-inner">
             Address:<br></br>
             <br></br>
             Fusio Ltd <br></br>

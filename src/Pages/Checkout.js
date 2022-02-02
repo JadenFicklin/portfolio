@@ -1,23 +1,27 @@
 import "./Checkout.css";
 import React from "react";
 import Nav from "./Nav";
+import { useEffect } from "react";
 
 function Checkout() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Nav />
-      <div class="checkout-outer">
-        <div class="checkout-outer-four-images-container">
-          <div class="checkout-image-one checkout-shoe"></div>
-          <div class="checkout-image-two checkout-shoe"></div>
-          <div class="checkout-image-three checkout-shoe"></div>
-          <div class="checkout-image-four checkout-shoe"></div>
+      <div className="checkout-outer">
+        <div className="checkout-outer-four-images-container">
+          <div className="checkout-image-one checkout-shoe"></div>
+          <div className="checkout-image-two checkout-shoe"></div>
+          <div className="checkout-image-three checkout-shoe"></div>
+          <div className="checkout-image-four checkout-shoe"></div>
         </div>
-        <div class="checkout-outer-input">
-          <div class="checkout-item-info">
+        <div className="checkout-outer-input">
+          <div className="checkout-item-info">
             Metal-free tanned leather LT 01 Desert Taupe $149
           </div>
-          <div class="checkout-size">
+          <div className="checkout-size">
             {/* <input type="text">
               <datalist id="shoe-size">
                 <option value="size 1"></option>
@@ -29,50 +33,50 @@ function Checkout() {
           </div>
           <input
             type="text"
-            class="checkout-input-box email"
+            className="checkout-input-box email"
             value="Email"
           ></input>
           <input
             type="text"
-            class="checkout-input-box first-name"
+            className="checkout-input-box first-name"
             value="First name"
           ></input>
           <input
             type="text"
-            class="checkout-input-box last-name"
+            className="checkout-input-box last-name"
             value="Last name"
           ></input>
           <input
             type="text"
-            class="checkout-input-box address"
+            className="checkout-input-box address"
             value="Address"
           ></input>
           <input
             type="text"
-            class="checkout-input-box city"
+            className="checkout-input-box city"
             value="City"
           ></input>
           <input
             type="text"
-            class="checkout-input-box country"
+            className="checkout-input-box country"
             value="Country"
           ></input>
           <input
             type="text"
-            class="checkout-input-box state"
+            className="checkout-input-box state"
             value="State"
           ></input>
           <input
             type="text"
-            class="checkout-input-box zip"
+            className="checkout-input-box zip"
             value="ZIP code"
           ></input>
           <input
             type="text"
-            class="checkout-input-box phone"
+            className="checkout-input-box phone"
             value="Phone"
           ></input>
-          <button class="checkout-checkout-button"></button>
+          <button className="checkout-checkout-button"></button>
         </div>
       </div>
     </>

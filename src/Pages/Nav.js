@@ -1,35 +1,46 @@
 import React from "react";
 import "./Nav.css";
 import { Link } from "react-router-dom";
+import useScrollPosition from "../hooks/useScrollPosition";
 
-function Nav() {
+function Nav({ light }) {
+  const scrollPosition = useScrollPosition();
+  const isScrolling = scrollPosition > 0;
+
+  const staticStyling = { color: light ? "white" : "#404040" };
+  const scrollStyling = {
+    backgroundColor: "rgba(255, 255, 255, 0.95)",
+  };
+
+  const navStyling = isScrolling ? scrollStyling : staticStyling;
+
   return (
-    <div class="nav">
-      <div class="nav-first">
+    <div className="nav" style={navStyling}>
+      <div className="nav-first">
         {/* euka */}
         <Link to="/">
-          <button class="euka">Euka.</button>
+          <button className="euka">Euka.</button>
         </Link>
         {/* Shop */}
         <Link to="/Shop">
-          <button class="shop">Shop</button>
+          <button className="shop">Shop</button>
         </Link>
         {/* Shoecare */}
         <Link to="/Shoecare">
-          <button class="shoecare">Shoecare</button>
+          <button className="shoecare">Shoecare</button>
         </Link>
         <Link to="/About">
-          <button class="about-link">About</button>
+          <button className="about-link">About</button>
         </Link>
       </div>
-      <div class="nav-last">
+      <div className="nav-last">
         {/* Signup */}
         <Link to="/Signup">
-          <button class="sign-up">sign up</button>
+          <button className="sign-up">sign up</button>
         </Link>
         {/* Login */}
         <Link to="/Login">
-          <button class="login">login</button>
+          <button className="login">login</button>
         </Link>
       </div>
     </div>
