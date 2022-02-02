@@ -1,0 +1,87 @@
+.shoecare-outer {
+  height: 2646px;
+}
+
+.shoecare-span-image {
+  width: 100%;
+  height: 1010px;
+  background-image: url("../assets/images/web_1920x.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+}
+.shoecare-image-span-text {
+  position: relative;
+  top: 880px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 7px;
+}
+
+.shoecare-text-outer {
+  width: 1826px;
+  height: 360px;
+  margin: 39px;
+  display: flex;
+  justify-content: space-between;
+}
+.shoecare-text-one,
+.shoecare-text-two {
+  width: 890px;
+  height: 360px;
+  background-color: lightgray;
+}
+
+.shoecare-bottom-outer {
+  width: 1826px;
+  height: 1126px;
+  margin: 39px;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.shoecare-bottom-left-picture {
+  width: 887px;
+  height: 1126px;
+  background-image: url("../assets/images/Capture\ 4.PNG");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+}
+.shoecare-bottom-right-container-outer {
+  width: 887px;
+  height: 1126px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.shoecare-bottom-right-containers-text {
+  width: 887px;
+  height: 574px;
+}
+.shoecare-text-bottom {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  top: 130px;
+}
+.shoecare-bottom-right-containers-bottom-left-picture,
+.shoecare-bottom-right-containers-bottom-right-picture {
+  width: 413px;
+  height: 552px;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+}
+.shoecare-bottom-right-containers-bottom-left-picture {
+  background-image: url("../assets/images/solutions.PNG");
+}
+.shoecare-bottom-right-containers-bottom-right-picture {
+  background-image: url("../assets/images/emmanuel-boldo-6dvunqwwkek-unsplash.jpg");
+}
