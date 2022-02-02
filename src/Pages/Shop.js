@@ -6,21 +6,8 @@ import { useEffect } from "react";
 
 function Shop() {
   useEffect(() => {
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
-  // class ScrollToTop extends Component {
-  //   componentDidUpdate(prevProps) {
-  //     const { location } = this.props;
-  //     if (location.pathname !== prevProps.location.pathname) {
-  //       window.scrollTo(0, 0);
-  //     }
-  //   }
-
-  //   render() {
-  //     const { children } = this.props;
-  //     return children;
-  //   }
-  // }
 
   return (
     <>
