@@ -18,6 +18,9 @@ function Nav() {
         <Link to="/Shoecare">
           <button class="shoecare">Shoecare</button>
         </Link>
+        <Link to="/About">
+          <button class="about-link">About</button>
+        </Link>
       </div>
       <div class="nav-last">
         {/* Signup */}

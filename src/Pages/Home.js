@@ -1,6 +1,7 @@
 import "./Home.css";
 import React from "react";
 import Nav from "./Nav";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -18,33 +19,41 @@ function Home() {
               <span class="k">k</span>
               <span class="a">a</span>
             </span>
-            <button class="span-button">SHOP NOW</button>
+            <Link to="/Shop">
+              <button class="span-button">SHOP NOW</button>
+            </Link>
           </div>
         </div>
 
         {/* <!-- shop women, shop men, about us --> */}
         <div id="outer-shop">
-          <div class="shop-women-image"></div>
+          <Link to="/Shop">
+            <div class="shop-women-image"></div>
+          </Link>
           <div class="shop-women-text">
             Shop for Women
-            <a href="" class="shop-women-button">
-              Shop now
-            </a>
+            <Link to="/Shop">
+              <a class="shop-women-button">Shop now</a>
+            </Link>
+            <Link to="/Shop"></Link>
           </div>
-          <div class="shop-men-image"></div>
+          <Link to="/Shop">
+            <div class="shop-men-image"></div>
+          </Link>
           <div class="shop-men-text">
             Shop for Men
-            <a href="" class="shop-men-button">
-              Shop now
-            </a>
+            <Link to="/Shop">
+              <a class="shop-men-button">Shop now</a>
+            </Link>
           </div>
-          <div class="who-we-are-image"></div>
+          <Link to="/Shoecare">
+            <div class="who-we-are-image"></div>
+          </Link>
           <div class="who-we-are-text">
-            Who we are <br />
-            Our journey explained.
-            <a href="" class="who-we-are-button">
-              Read story
-            </a>
+            Shoecare solutions
+            <Link to="/Shoecare">
+              <a class="who-we-are-button">Shop now</a>
+            </Link>
           </div>
         </div>
 
@@ -73,18 +82,26 @@ function Home() {
 
         {/* <!-- shoecare and locations --> */}
         <div class="outer-shoecare-locations">
-          <div class="shoecare-image"></div>
-          <div class="location-image"></div>
+          <Link to="/About">
+            <div class="shoecare-image"></div>
+          </Link>
+          <Link to="/About">
+            <div class="location-image"></div>
+          </Link>
           <div class="shoecare-text">
-            Shoecare solutions
-            <div class="shoecare-btn">
-              <a id="shoecare-button">Shop now</a>
-            </div>
+            Who we are, our journey explained
+            <Link to="/About">
+              <div class="shoecare-btn">
+                <a id="shoecare-button">Read</a>
+              </div>
+            </Link>
           </div>
           <div class="location-text">
             locations
             <div class="store-btn">
-              <a class="find-store">Find store</a>
+              <Link to="/About">
+                <a class="find-store">Find store</a>
+              </Link>
             </div>
           </div>
         </div>

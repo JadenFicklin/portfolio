@@ -47,9 +47,10 @@ a {
   letter-spacing: 3px;
 }
 .euka {
-  font-weight: bolder;
+  font-weight: 700;
   font-size: 40px;
   transition: 0.3s;
+  letter-spacing: 2px;
 }
 .euka:hover {
   color: rgb(31, 31, 31);
