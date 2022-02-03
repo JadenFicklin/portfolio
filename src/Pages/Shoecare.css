@@ -33,8 +33,23 @@
 .shoecare-text-one,
 .shoecare-text-two {
   width: 890px;
-  height: 360px;
-  background-color: lightgray;
+  height: 300px;
+
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.shoecare-text-header {
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+  padding: 30px 0px 10px 0px;
+  font-weight: 700;
+}
+.shoecare-text-one-paragraph {
+  width: 100%;
+  height: 200px;
 }
 
 .shoecare-bottom-outer {
@@ -67,10 +82,21 @@
 }
 .shoecare-text-bottom {
   width: 300px;
-  height: 200px;
+  height: 150px;
   position: relative;
-  top: 130px;
+  top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  font-weight: 600;
 }
+
+.shoecare-text-bottom-paragraph {
+  font-size: 28px;
+  color: black;
+  font-weight: 400;
+}
+
 .shoecare-bottom-right-containers-bottom-left-picture,
 .shoecare-bottom-right-containers-bottom-right-picture {
   width: 413px;
