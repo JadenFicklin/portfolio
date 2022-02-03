@@ -16,12 +16,13 @@ function About() {
         </div>
         <div className="about-text-one-outer">
           <div className="about-text-one">
-            text goes here <br></br>
-            <br></br>Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
+            <h4 className="about-span-one">A constant journey to perfection</h4>
+            <br></br>
+            <br></br>All our shoes are designed in Iceland and handmade by
+            experienced craftsman. Through this combination we have merged
+            traditional craftsmanship with innovative design, applying artisanal
+            techniques to sneakers silhouettes based on classic tennis sneakers.
+            That’s what makes our product unique.
           </div>
         </div>
         <div className="about-pictures-one-and-two-outer">
@@ -54,8 +55,11 @@ function About() {
           </div>
           <div className="about-picture-seven"></div>
         </div>
-        <div className="locations-text">Locations</div>
-        <div className="locations-picture"></div>
+
+        <div className="locations-picture">
+          {" "}
+          <div className="locations-text">Locations</div>
+        </div>
         <div className="locations-lower-text-outer">
           <div className="locations-lower-text-inner">
             Address:<br></br>
