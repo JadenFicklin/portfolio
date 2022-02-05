@@ -3,15 +3,29 @@ import React from "react";
 import Nav from "./Nav";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import axios from "axios";
 
 function Shop() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  function getButton() {
+    axios.get("http://localhost:4000/api/houses").then(function (res) {
+      for (let i = 0; i < res.data.length; i++) {
+        document.createElement("div").className("box");
+        //add inner HTML with src of res.data[i].imageOne
+      }
+    });
+  }
+
   return (
     <>
       <Nav />
+      <section></section>
+      <button onClick={getButton} className="get-database">
+        get database in console log
+      </button>
       <div className="shop-shoes">Mens shoes</div>
       <div className="shop-outer">
         <div className="row-one row">
