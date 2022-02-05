@@ -1,12 +1,4 @@
-/* .nav {
-  margin-top: -281px;
-} */
-section {
-  width: 100px;
-  height: 100px;
-  background-color: lightgray;
-}
-
+/* button for testing */
 .get-database {
   border: 1px solid black;
   border-radius: 4px;
@@ -16,7 +8,10 @@ section {
   top: 100px;
   left: 500px;
 }
-.shop-shoes {
+
+/* header text */
+.shop-shoes,
+.shop-shoes-women {
   width: 100%;
   height: 81px;
   margin-top: 188px;
@@ -27,25 +22,42 @@ section {
   align-items: flex-start;
   margin-bottom: 16px;
 }
+.shop-shoes-women {
+  margin-top: 400px;
+}
+
+/* container for all boxes */
 .shop-outer {
   width: 100%;
   height: 991px;
-}
-
-.row {
-  height: 247px;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
+/* container for womens boxes */
+.shop-outer-women {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* boxes */
 .box {
-  height: 100%;
-  width: 380.6px;
-  background-image: url("../assets/images/3.PNG");
+  height: 247px;
+  width: 475.7px;
   background-size: cover;
   background-position: center;
   background-repeat: none;
+  transition: 0.25s;
 }
+
 .box:hover {
   opacity: 50%;
+}
+
+.box span {
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.box:hover span {
+  opacity: 1;
 }
