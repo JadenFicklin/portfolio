@@ -119,18 +119,7 @@
     "imageThree": "https://live.staticflickr.com/65535/51862886238_cdb607d54b_b.jpg",
     "imageFour": "https://live.staticflickr.com/65535/51862886233_b0d2006495_b.jpg"
   },
-  {
-    "id": 11,
-    "gender": "men",
-    "type": "Metal-free tanned leather",
-    "name": "LT 01 Navy",
-    "color": "blue",
-    "price": 189.26,
-    "imageOne": "https://live.staticflickr.com/65535/51863463615_68c4e1f2cc_b.jpg",
-    "imageTwo": "https://live.staticflickr.com/65535/51863134499_4a3686a993_b.jpg",
-    "imageThree": "https://live.staticflickr.com/65535/51861842867_604159b4fd_b.jpg",
-    "imageFour": "https://live.staticflickr.com/65535/51861842857_1b787a2bb1_b.jpg"
-  },
+
   {
     "id": 12,
     "gender": "men",
@@ -166,18 +155,6 @@
     "imageTwo": "https://live.staticflickr.com/65535/51862804556_9d8fbccb3c_b.jpg",
     "imageThree": "https://live.staticflickr.com/65535/51862804546_bdbefe61dd_b.jpg",
     "imageFour": "https://live.staticflickr.com/65535/51863134414_3a03498af7_b.jpg"
-  },
-  {
-    "id": 15,
-    "gender": "men",
-    "type": "poly-cotton",
-    "name": "LT 01 Court Lite Suede Navy",
-    "color": "blue",
-    "price": 156.2,
-    "imageOne": "https://live.staticflickr.com/65535/51861842812_4fc0e4e4e4_b.jpg",
-    "imageTwo": "https://live.staticflickr.com/65535/51862886148_4b03d0fba3_b.jpg",
-    "imageThree": "https://live.staticflickr.com/65535/51862886138_5dd3ae8106_b.jpg",
-    "imageFour": "https://live.staticflickr.com/65535/51862804516_4800e77623_b.jpg"
   },
   {
     "id": 16,
@@ -262,18 +239,6 @@
     "imageTwo": "https://live.staticflickr.com/65535/51862885993_ae26efdf40_b.jpg",
     "imageThree": "https://live.staticflickr.com/65535/51862885983_170c29341c_b.jpg",
     "imageFour": "https://live.staticflickr.com/65535/51862885973_9db799a5ce_b.jpg"
-  },
-  {
-    "id": 23,
-    "gender": "female",
-    "type": "Natural rubber outsoles",
-    "name": "LT 01 Premium Suede Black",
-    "color": "black",
-    "price": 114.05,
-    "imageOne": "https://live.staticflickr.com/65535/51861842612_738e5c2a21_b.jpg",
-    "imageTwo": "https://live.staticflickr.com/65535/51862804341_c1bf0ed250_b.jpg",
-    "imageThree": "https://live.staticflickr.com/65535/51863134229_1ff880f5c7_b.jpg",
-    "imageFour": "https://live.staticflickr.com/65535/51861842602_13682b65fd_b.jpg"
   },
   {
     "id": 24,

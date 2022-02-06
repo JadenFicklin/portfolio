@@ -4,7 +4,7 @@ import Nav from "./Nav";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { buildQueries } from "@testing-library/react";
+// import { buildQueries } from "@testing-library/react";
 
 function Shop() {
   // start at to top of page
@@ -35,7 +35,7 @@ function Shop() {
       </button> */}
 
       {/* mens shoes */}
-      <div className="shop-shoes">Mens shoes</div>
+      <div className="shop-shoes">Shoes Selection</div>
       <div className="shop-outer">
         {shoes.map((shoe) => (
           <Link to="/Checkout">
@@ -44,6 +44,7 @@ function Shop() {
               style={{ backgroundImage: `url(${shoe.imageOne})` }}
             >
               <span>{shoe.name}</span>
+              <span>{shoe.price}</span>
             </div>
           </Link>
         ))}
