@@ -27,7 +27,7 @@ function Shop() {
   return (
     <>
       {/* import navigation bar */}
-      <Nav />
+      <Nav light={true} />
 
       {/* button */}
       {/* <button onClick={getButton} className="get-database">
@@ -35,7 +35,10 @@ function Shop() {
       </button> */}
 
       {/* mens shoes */}
-      <div className="shop-shoes">Shoes Selection</div>
+      <div className="shop-span-image">
+        <div className="shop-shoes">Shoes Selection</div>
+      </div>
+
       <div className="shop-outer">
         {shoes.map((shoe) => (
           <Link to="/Checkout">
@@ -44,7 +47,7 @@ function Shop() {
               style={{ backgroundImage: `url(${shoe.imageOne})` }}
             >
               <span>{shoe.name}</span>
-              <span>{shoe.price}</span>
+              <span>${shoe.price}</span>
             </div>
           </Link>
         ))}
