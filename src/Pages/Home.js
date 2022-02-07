@@ -64,9 +64,15 @@ function Home() {
         {/* <!-- our best sellers --> */}
         <div className="our-best-sellers">Our best sellers</div>
         <div className="outer-best-sellers">
-          <div className="first-option-image"></div>
-          <div className="second-option-image"></div>
-          <div className="third-option-image"></div>
+          <Link to="/Checkout">
+            <div className="first-option-image"></div>
+          </Link>
+          <Link to="/Checkout">
+            <div className="second-option-image"></div>
+          </Link>
+          <Link to="/Checkout">
+            <div className="third-option-image"></div>
+          </Link>
           <div id="first-option-text">
             Metal-free tanned leather <br />
             LT 01 VEGEA White <br />

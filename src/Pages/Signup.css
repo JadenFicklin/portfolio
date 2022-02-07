@@ -138,11 +138,13 @@
 }
 
 .signup-already-have-account {
-  width: 75%;
+  width: 855px;
   height: 100%;
   display: flex;
   align-items: flex-start;
   font-size: 20px;
+  letter-spacing: 0px;
+  font-weight: 400;
 }
 
 .signup-create-account {

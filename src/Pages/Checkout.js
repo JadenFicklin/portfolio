@@ -34,47 +34,47 @@ function Checkout() {
           <input
             type="text"
             className="checkout-input-box email"
-            value="Email"
+            placeholder="Email"
           ></input>
           <input
             type="text"
             className="checkout-input-box first-name"
-            value="First name"
+            placeholder="First name"
           ></input>
           <input
             type="text"
             className="checkout-input-box last-name"
-            value="Last name"
+            placeholder="Last name"
           ></input>
           <input
             type="text"
             className="checkout-input-box address"
-            value="Address"
+            placeholder="Address"
           ></input>
           <input
             type="text"
             className="checkout-input-box city"
-            value="City"
+            placeholder="City"
           ></input>
           <input
             type="text"
             className="checkout-input-box country"
-            value="Country"
+            placeholder="Country"
           ></input>
           <input
             type="text"
             className="checkout-input-box state"
-            value="State"
+            placeholder="State"
           ></input>
           <input
             type="text"
             className="checkout-input-box zip"
-            value="ZIP code"
+            placeholder="ZIP code"
           ></input>
           <input
             type="text"
             className="checkout-input-box phone"
-            value="Phone"
+            placeholder="Phone"
           ></input>
           <button className="checkout-checkout-button"></button>
         </div>

@@ -3,6 +3,7 @@ import Nav from "./Nav";
 import { useEffect } from "react";
 import "./Signup.css";
 import validation from "./validation";
+import { Link } from "react-router-dom";
 
 function Signup() {
   useEffect(() => {
@@ -106,9 +107,11 @@ function Signup() {
             )}
           </div>
           <div className="signup-bottom">
-            <div className="signup-already-have-account">
-              I already have an account
-            </div>
+            <Link to="/Login">
+              <div className="signup-already-have-account">
+                I already have an account
+              </div>
+            </Link>
             <button
               className="signup-create-account"
               onClick={handleFormSubmit}

@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "./Nav";
 import { useEffect } from "react";
 import "./Login.css";
+import { Link } from "react-router-dom";
 
 function Login() {
   useEffect(() => {
@@ -20,13 +21,23 @@ function Login() {
           <div className="login-info-outer">
             <div className="login-email-text">Username</div>
             <div className="login-password-text">Password</div>
-            <input className="login-email-box" type="text"></input>
-            <input className="login-password-box" type="text"></input>
+            <input
+              className="login-email-box"
+              type="text"
+              placeholder="username"
+            ></input>
+            <input
+              className="login-password-box"
+              type="password"
+              placeholder="Password"
+            ></input>
           </div>
           <div className="login-bottom">
-            <div className="login-already-have-account">
-              I don't have an account
-            </div>
+            <Link to="/Signup">
+              <div className="login-already-have-account">
+                I don't have an account
+              </div>
+            </Link>
             <div className="login-create-account">Login</div>
           </div>
         </div>
