@@ -49,7 +49,7 @@
 }
 .signup-first-name-text,
 .signup-last-name-text,
-.signup-email-text,
+.signup-username-text,
 .signup-password-text {
   margin-top: 40px;
   width: 514px;
@@ -64,8 +64,8 @@
 }
 .signup-first-name-box,
 .signup-last-name-box,
-.signup-birthday-box,
-.singup-email-box,
+.signup-email-box,
+.singup-username-box,
 .singup-password-box {
   width: 514px;
   height: 50px;
@@ -74,14 +74,13 @@
   padding-left: 15px;
   letter-spacing: 1px;
 }
-.signup-birthday-text {
+.signup-email-text {
   margin-top: 40px;
   width: 100%;
   height: 40px;
-
   font-size: 25px;
 }
-.signup-birthday-box {
+.signup-email-box {
   margin-right: 514px;
 }
 
