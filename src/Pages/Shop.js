@@ -13,11 +13,12 @@ function Shop() {
   }, []);
 
   const [shoes, setShoes] = useState([]);
-  const [filteredShoes, setFilteredShoes] = useState([]);
+  const [allShoes, setAllShoes] = useState([]);
 
   function getButton() {
     axios.get("http://localhost:4000/api/houses").then(function (res) {
       setShoes(res.data);
+      setAllShoes(res.data);
     });
   }
 
@@ -26,8 +27,10 @@ function Shop() {
   }, []);
 
   function filterShoes(filter) {
-    const filteredArray = shoes.filter((shoe) => shoe.name.includes(filter));
-    setShoes(filter === "" ? shoes : filteredArray);
+    const filteredArray = shoes.filter((shoe) =>
+      shoe.name.toLowerCase().includes(filter)
+    );
+    setShoes(filter === "" ? allShoes : filteredArray);
   }
 
   return (

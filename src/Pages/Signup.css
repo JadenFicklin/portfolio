@@ -115,3 +115,10 @@
   align-items: center;
   font-size: 20px;
 }
+
+.error {
+  width: 100px;
+  height: 300px;
+  color: red;
+  font-size: 20px;
+}

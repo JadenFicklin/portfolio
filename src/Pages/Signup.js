@@ -1,12 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "./Nav";
 import { useEffect } from "react";
 import "./Signup.css";
+import validation from "./validation";
 
 function Signup() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const [values, setValues] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    username: "",
+    password: "",
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (event) => {
+    setValues({
+      ...values,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    setErrors(validation(values));
+  };
 
   return (
     <>
@@ -26,37 +49,63 @@ function Signup() {
                 className="signup-first-name-box"
                 type="text"
                 placeholder="First name"
-              ></input>
+                name="firstname"
+                value={values.firstname}
+                onChange={handleChange}
+              />
+              {errors.firstname && <p className="error">{errors.firstname}</p>}
               <input
                 className="signup-last-name-box"
                 type="text"
                 placeholder="Last name"
-              ></input>
+                name="lastname"
+                value={values.lastname}
+                onChange={handleChange}
+              />
+              {errors.lastname && <p className="error">{errors.lastname}</p>}
             </div>
             <div className="signup-email-text">Email</div>
             <input
               className="signup-email-box"
-              type="email"
+              type="text"
               placeholder="Email"
-            ></input>
+              name="email"
+              value={values.email}
+              onChange={handleChange}
+            />
+            {errors.email && <p className="error">{errors.email}</p>}
             <div className="signup-username-text">Username</div>
             <div className="signup-password-text">Password</div>
             <input
               className="singup-username-box"
               type="text"
               placeholder="Username"
-            ></input>
+              name="username"
+              value={values.username}
+              onChange={handleChange}
+            />
+            {errors.username && <p className="error">{errors.username}</p>}
             <input
               className="singup-password-box"
               type="password"
               placeholder="Password"
-            ></input>
+              name="password"
+              value={values.password}
+              onChange={handleChange}
+            />
+            {errors.password && <p className="error">{errors.password}</p>}
           </div>
           <div className="signup-bottom">
             <div className="signup-already-have-account">
               I already have an account
             </div>
-            <button className="signup-create-account">Create account</button>
+            <button
+              className="signup-create-account"
+              onClick={handleFormSubmit}
+              type="submit"
+            >
+              Create account
+            </button>
           </div>
         </form>
       </div>
