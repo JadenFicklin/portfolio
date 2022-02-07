@@ -53,7 +53,9 @@ function Signup() {
                 value={values.firstname}
                 onChange={handleChange}
               />
-              {errors.firstname && <p className="error">{errors.firstname}</p>}
+              {errors.firstname && (
+                <p className="error error-firstname">{errors.firstname}</p>
+              )}
               <input
                 className="signup-last-name-box"
                 type="text"
@@ -62,7 +64,9 @@ function Signup() {
                 value={values.lastname}
                 onChange={handleChange}
               />
-              {errors.lastname && <p className="error">{errors.lastname}</p>}
+              {errors.lastname && (
+                <p className="error error-lastname">{errors.lastname}</p>
+              )}
             </div>
             <div className="signup-email-text">Email</div>
             <input
@@ -73,27 +77,33 @@ function Signup() {
               value={values.email}
               onChange={handleChange}
             />
-            {errors.email && <p className="error">{errors.email}</p>}
+            {errors.email && (
+              <p className="error error-email">{errors.email}</p>
+            )}
             <div className="signup-username-text">Username</div>
             <div className="signup-password-text">Password</div>
             <input
-              className="singup-username-box"
+              className="signup-username-box"
               type="text"
               placeholder="Username"
               name="username"
               value={values.username}
               onChange={handleChange}
             />
-            {errors.username && <p className="error">{errors.username}</p>}
+            {errors.username && (
+              <p className="error error-username">{errors.username}</p>
+            )}
             <input
-              className="singup-password-box"
+              className="signup-password-box"
               type="password"
               placeholder="Password"
               name="password"
               value={values.password}
               onChange={handleChange}
             />
-            {errors.password && <p className="error">{errors.password}</p>}
+            {errors.password && (
+              <p className="error error-password">{errors.password}</p>
+            )}
           </div>
           <div className="signup-bottom">
             <div className="signup-already-have-account">
