@@ -5,7 +5,7 @@ import "./Signup.css";
 
 function Signup() {
   useEffect(() => {
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -25,9 +25,9 @@ function Signup() {
               <input className="signup-first-name-box" type="text"></input>
               <input className="signup-last-name-box" type="text"></input>
             </div>
-            <div className="signup-birthday-text">Birthday</div>
+            <div className="signup-birthday-text">Email</div>
             <input className="signup-birthday-box" type="text"></input>
-            <div className="signup-email-text">Email Address</div>
+            <div className="signup-email-text">Username</div>
             <div className="signup-password-text">Password</div>
             <input className="singup-email-box" type="text"></input>
             <input className="singup-password-box" type="text"></input>

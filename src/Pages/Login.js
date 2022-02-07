@@ -18,7 +18,7 @@ function Login() {
         <div className="login-right-side">
           <div className="login-create-account-text">Create Account</div>
           <div className="login-info-outer">
-            <div className="login-email-text">Email Address</div>
+            <div className="login-email-text">Username</div>
             <div className="login-password-text">Password</div>
             <input className="login-email-box" type="text"></input>
             <input className="login-password-box" type="text"></input>

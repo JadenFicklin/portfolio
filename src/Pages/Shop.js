@@ -13,6 +13,7 @@ function Shop() {
   }, []);
 
   const [shoes, setShoes] = useState([]);
+  const [filteredShoes, setFilteredShoes] = useState([]);
 
   function getButton() {
     axios.get("http://localhost:4000/api/houses").then(function (res) {
@@ -23,6 +24,11 @@ function Shop() {
   useEffect(() => {
     getButton();
   }, []);
+
+  function filterShoes(filter) {
+    const filteredArray = shoes.filter((shoe) => shoe.name.includes(filter));
+    setShoes(filter === "" ? shoes : filteredArray);
+  }
 
   return (
     <>
@@ -38,10 +44,17 @@ function Shop() {
       <div className="shop-span-image">
         <div className="shop-shoes">Shoes Selection</div>
       </div>
-
+      <div className="shop-search-bar">
+        <p className="shop-search-text">Search</p>
+        <input
+          className="shop-search-input"
+          // onChange={(e) => setFilter(e.target.value)}
+          onChange={(e) => filterShoes(e.target.value)}
+        ></input>
+      </div>
       <div className="shop-outer">
         {shoes.map((shoe) => (
-          <Link to="/Checkout">
+          <Link to="/Checkout" key={shoe.id}>
             <div
               className="box"
               style={{ backgroundImage: `url(${shoe.imageOne})` }}
