@@ -69,9 +69,11 @@
 
 .about-picture-one {
   background-image: url("../assets/images/nike-m-nsw-ce-ft-jggr-snl-.jpg");
+  transition: 0.6s;
 }
 .about-picture-two {
   background-image: url("../assets/images/white-shoes.PNG");
+  transition: 0.9s;
 }
 
 .about-pictures-three-and-four-outer {
@@ -81,6 +83,7 @@
 .about-picture-three {
   display: flex;
   align-items: center;
+  transition: 0.6s;
 }
 .about-inner-picture-three,
 .about-picture-six-inner {
@@ -96,6 +99,7 @@
 }
 .about-picture-four {
   background-image: url("../assets/images/sitting.jpg");
+  transition: 0.6s;
 }
 .about-text-two-outer {
   width: 1814px;
@@ -127,6 +131,7 @@
   background-repeat: none;
   margin: 0 auto;
   margin-top: -20px;
+  transition: 1.2s;
 }
 
 .about-pictures-six-and-seven-outer {
@@ -135,12 +140,14 @@
 .about-picture-six {
   display: flex;
   align-items: center;
+  transition: 0.6s;
 }
 .about-picture-six-inner {
   background-image: url("../assets/images/about.PNG");
 }
 .about-picture-seven {
   background-image: url("../assets/images/IMG_9897_1080x.jpg");
+  transition: 0.6s;
 }
 
 .locations-text {
@@ -163,6 +170,7 @@
   background-repeat: none;
   margin: 0 auto;
   margin-top: 20px;
+  transition: 1.2s;
 }
 .locations-lower-text-outer {
   width: 1815px;

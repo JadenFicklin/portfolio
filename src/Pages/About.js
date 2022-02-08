@@ -2,11 +2,38 @@ import "./About.css";
 import React from "react";
 import Nav from "./Nav";
 import { useEffect } from "react";
+import useScrollPosition from "../hooks/useScrollPosition";
 
 function About() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const scrollPosition = useScrollPosition();
+  console.log(scrollPosition);
+  const imageChangeStyling = { marginTop: "200px", opacity: "0%" };
+  const imageStaticStyling = { marginTop: "0px", opacity: "100%" };
+
+  const imageStyling =
+    scrollPosition < 500 ? imageChangeStyling : imageStaticStyling;
+
+  const imageTwoStyling =
+    scrollPosition < 1700 ? imageChangeStyling : imageStaticStyling;
+
+  const imageThreeStyling =
+    scrollPosition < 1900 ? imageChangeStyling : imageStaticStyling;
+
+  const imageFourStyling =
+    scrollPosition < 3300 ? imageChangeStyling : imageStaticStyling;
+
+  const imageFiveStyling =
+    scrollPosition < 4900 ? imageChangeStyling : imageStaticStyling;
+
+  const imageSixStyling =
+    scrollPosition < 4700 ? imageChangeStyling : imageStaticStyling;
+
+  const imageSevenStyling =
+    scrollPosition < 6100 ? imageChangeStyling : imageStaticStyling;
   return (
     <>
       <Nav light={true} />
@@ -26,14 +53,14 @@ function About() {
           </div>
         </div>
         <div className="about-pictures-one-and-two-outer">
-          <div className="about-picture-one"></div>
-          <div className="about-picture-two"></div>
+          <div className="about-picture-one" style={imageStyling}></div>
+          <div className="about-picture-two" style={imageStyling}></div>
         </div>
         <div className="about-pictures-three-and-four-outer">
-          <div className="about-picture-three">
+          <div className="about-picture-three" style={imageThreeStyling}>
             <div className="about-inner-picture-three"></div>
           </div>
-          <div className="about-picture-four"></div>
+          <div className="about-picture-four" style={imageTwoStyling}></div>
         </div>
         <div className="about-text-two-outer">
           <div className="about-text-two">
@@ -48,16 +75,15 @@ function About() {
             everyday-sneakers.
           </div>
         </div>
-        <div className="about-picture-five"></div>
+        <div className="about-picture-five" style={imageFourStyling}></div>
         <div className="about-pictures-six-and-seven-outer">
-          <div className="about-picture-six">
+          <div className="about-picture-six" style={imageFiveStyling}>
             <div className="about-picture-six-inner"></div>
           </div>
-          <div className="about-picture-seven"></div>
+          <div className="about-picture-seven" style={imageSixStyling}></div>
         </div>
 
-        <div className="locations-picture">
-          {" "}
+        <div className="locations-picture" style={imageSevenStyling}>
           <div className="locations-text">Locations</div>
         </div>
         <div className="locations-lower-text-outer">
