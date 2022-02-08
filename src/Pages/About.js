@@ -10,9 +10,14 @@ function About() {
   }, []);
 
   const scrollPosition = useScrollPosition();
-  console.log(scrollPosition);
   const imageChangeStyling = { marginTop: "200px", opacity: "0%" };
   const imageStaticStyling = { marginTop: "0px", opacity: "100%" };
+
+  const spanChangeStyling = { marginTop: "0px", opacity: "100%" };
+  const spanStaticStyling = { height: "900px", opacity: "0%" };
+
+  const spanStyling =
+    scrollPosition < 500 ? spanChangeStyling : spanStaticStyling;
 
   const imageStyling =
     scrollPosition < 500 ? imageChangeStyling : imageStaticStyling;
@@ -38,7 +43,7 @@ function About() {
     <>
       <Nav light={true} />
       <div className="about-outer">
-        <div className="about-span-image">
+        <div className="about-span-image" style={spanStyling}>
           <div className="about-image-span-text">Our Journey explained</div>
         </div>
         <div className="about-text-one-outer">

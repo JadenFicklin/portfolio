@@ -5,7 +5,7 @@ import Shoecare from "./Pages/Shoecare";
 import Signup from "./Pages/Signup";
 import Login from "./Pages/Login";
 import Checkout from "./Pages/Checkout";
-import About from "./Pages/About"
+import About from "./Pages/About";
 
 function App() {
   return (
@@ -16,7 +16,9 @@ function App() {
         <Route path="/shoecare" element={<Shoecare />} />
         <Route path="/Signup" element={<Signup />} />
         <Route path="/Login" element={<Login />} />
-        <Route path="/Checkout" element={<Checkout />} />
+        <Route path="/Checkout" element={<Checkout />}>
+          <Route path=":id" element={<Checkout />} />
+        </Route>
         <Route path="/About" element={<About />} />
       </Routes>
     </Router>

@@ -10,9 +10,13 @@ function Shoecare() {
   }, []);
 
   const scrollPosition = useScrollPosition();
-  console.log(scrollPosition);
   const imageChangeStyling = { marginTop: "200px", opacity: "0%" };
   const imageStaticStyling = { marginTop: "0px", opacity: "100%" };
+  const spanChangeStyling = { marginTop: "0px", opacity: "100%" };
+  const spanStaticStyling = { height: "900px", opacity: "0%" };
+
+  const spanStyling =
+    scrollPosition < 500 ? spanChangeStyling : spanStaticStyling;
 
   const imageStyling =
     scrollPosition < 700 ? imageChangeStyling : imageStaticStyling;
@@ -23,7 +27,7 @@ function Shoecare() {
     <>
       <Nav />
       <div className="shoecare-outer">
-        <div className="shoecare-span-image">
+        <div className="shoecare-span-image" style={spanStyling}>
           <div className="shoecare-image-span-text">Shoecare Solutions</div>
         </div>
         <div className="shoecare-text-outer">

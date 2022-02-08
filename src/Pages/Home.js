@@ -12,8 +12,6 @@ function Home() {
 
   const scrollPosition = useScrollPosition();
 
-  console.log(scrollPosition);
-
   //   const staticStyling = { color: light ? "white" : "#404040" };
   //   const scrollStyling = {
   //     backgroundColor: "rgba(255, 255, 255, 0.95)",

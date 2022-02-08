@@ -9,6 +9,7 @@
   background-size: cover;
   background-position: bottom;
   background-repeat: none;
+  transition: 0.6s;
 }
 .shoecare-image-span-text {
   position: relative;

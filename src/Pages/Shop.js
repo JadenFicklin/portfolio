@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 // import { buildQueries } from "@testing-library/react";
+import useScrollPosition from "../hooks/useScrollPosition";
 
 function Shop() {
   // start at to top of page
@@ -12,11 +13,18 @@ function Shop() {
     window.scrollTo(0, 0);
   }, []);
 
+  // const scrollPosition = useScrollPosition();
+  // console.log(scrollPosition);
+  // const spanChangeStyling = { marginTop: "0px", opacity: "100%" };
+  // const spanStaticStyling = { height: "900px", opacity: "0%" };
+
+  // const spanStyling =
+  //   scrollPosition < 500 ? spanChangeStyling : spanStaticStyling;
   const [shoes, setShoes] = useState([]);
   const [allShoes, setAllShoes] = useState([]);
 
   function getButton() {
-    axios.get("http://localhost:4000/api/houses").then(function (res) {
+    axios.get(`http://localhost:4000/api/houses`).then(function (res) {
       setShoes(res.data);
       setAllShoes(res.data);
     });
@@ -32,7 +40,6 @@ function Shop() {
     );
     setShoes(filter === "" ? allShoes : filteredArray);
   }
-
   return (
     <>
       {/* import navigation bar */}
@@ -57,7 +64,7 @@ function Shop() {
       </div>
       <div className="shop-outer">
         {shoes.map((shoe) => (
-          <Link to="/Checkout" key={shoe.id}>
+          <Link to={`/Checkout/${shoe.id}`} key={shoe.id}>
             <div
               className="box"
               style={{ backgroundImage: `url(${shoe.imageOne})` }}

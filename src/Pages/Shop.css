@@ -85,6 +85,7 @@
   background-position: bottom;
   background-repeat: none;
   margin-top: 0;
+  transition: 0.6s;
 }
 
 .shop-shoes {
