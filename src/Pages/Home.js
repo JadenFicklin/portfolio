@@ -11,7 +11,7 @@ function Home() {
   }, []);
 
   const scrollPosition = useScrollPosition();
-  const isScrolling = scrollPosition > 0;
+
   console.log(scrollPosition);
 
   //   const staticStyling = { color: light ? "white" : "#404040" };
@@ -32,10 +32,10 @@ function Home() {
     scrollPosition < 500 ? textChangeStyling : textStaticStyling;
 
   const imageTwoStyling =
-    scrollPosition < 1100 ? imageChangeStyling : imageStaticStyling;
+    scrollPosition < 1000 ? imageChangeStyling : imageStaticStyling;
 
   const imageThreeStyling =
-    scrollPosition < 2000 ? imageChangeStyling : imageStaticStyling;
+    scrollPosition < 1800 ? imageChangeStyling : imageStaticStyling;
 
   return (
     <>

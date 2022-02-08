@@ -2,11 +2,23 @@ import "./Shoecare.css";
 import React from "react";
 import Nav from "./Nav";
 import { useEffect } from "react";
+import useScrollPosition from "../hooks/useScrollPosition";
 
 function Shoecare() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const scrollPosition = useScrollPosition();
+  console.log(scrollPosition);
+  const imageChangeStyling = { marginTop: "200px", opacity: "0%" };
+  const imageStaticStyling = { marginTop: "0px", opacity: "100%" };
+
+  const imageStyling =
+    scrollPosition < 700 ? imageChangeStyling : imageStaticStyling;
+
+  const imageTwoStyling =
+    scrollPosition < 1100 ? imageChangeStyling : imageStaticStyling;
   return (
     <>
       <Nav />
@@ -38,7 +50,10 @@ function Shoecare() {
           </div>
         </div>
         <div className="shoecare-bottom-outer">
-          <div className="shoecare-bottom-left-picture"></div>
+          <div
+            className="shoecare-bottom-left-picture"
+            style={imageStyling}
+          ></div>
           <div className="shoecare-bottom-right-container-outer">
             <div className="shoecare-bottom-right-containers-text">
               <div className="shoecare-text-bottom">
@@ -50,8 +65,14 @@ function Shoecare() {
                 </p>
               </div>
             </div>
-            <div className="shoecare-bottom-right-containers-bottom-left-picture"></div>
-            <div className="shoecare-bottom-right-containers-bottom-right-picture"></div>
+            <div
+              className="shoecare-bottom-right-containers-bottom-left-picture"
+              style={imageTwoStyling}
+            ></div>
+            <div
+              className="shoecare-bottom-right-containers-bottom-right-picture"
+              style={imageTwoStyling}
+            ></div>
           </div>
         </div>
       </div>
