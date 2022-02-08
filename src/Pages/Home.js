@@ -66,7 +66,6 @@ function Home() {
             <Link to="/Shop">
               <a className="shop-women-button">Shop now</a>
             </Link>
-            <Link to="/Shop"></Link>
           </div>
           <Link to="/Shop">
             <div className="shop-men-image" style={imageStyling}></div>

@@ -3,6 +3,7 @@ import React from "react";
 import Nav from "./Nav";
 import { useEffect } from "react";
 import useScrollPosition from "../hooks/useScrollPosition";
+import { Link } from "react-router-dom";
 
 function Shoecare() {
   useEffect(() => {
@@ -27,9 +28,11 @@ function Shoecare() {
     <>
       <Nav />
       <div className="shoecare-outer">
-        <div className="shoecare-span-image" style={spanStyling}>
-          <div className="shoecare-image-span-text">Shoecare Solutions</div>
-        </div>
+        <Link to="/ShoecareCheckout">
+          <div className="shoecare-span-image" style={spanStyling}>
+            <div className="shoecare-image-span-text">Shoecare Solutions</div>
+          </div>
+        </Link>
         <div className="shoecare-text-outer">
           <div className="shoecare-text-one">
             <p className="shoecare-text-header">
@@ -54,29 +57,37 @@ function Shoecare() {
           </div>
         </div>
         <div className="shoecare-bottom-outer">
-          <div
-            className="shoecare-bottom-left-picture"
-            style={imageStyling}
-          ></div>
+          <Link to="/ShoecareCheckout">
+            <div
+              className="shoecare-bottom-left-picture"
+              style={imageStyling}
+            ></div>
+          </Link>
           <div className="shoecare-bottom-right-container-outer">
             <div className="shoecare-bottom-right-containers-text">
-              <div className="shoecare-text-bottom">
-                <p calssName="shoecare-text-bottom-header">
-                  Harmless yet effective
-                </p>
-                <p className="shoecare-text-bottom-paragraph">
-                  Explore our natural shoe care solutions with SneakerLAB®
-                </p>
-              </div>
+              <Link to="/ShoecareCheckout">
+                <div className="shoecare-text-bottom">
+                  <p calssName="shoecare-text-bottom-header">
+                    Harmless yet effective
+                  </p>
+                  <p className="shoecare-text-bottom-paragraph">
+                    Explore our natural shoe care solutions with SneakerLAB®
+                  </p>
+                </div>
+              </Link>
             </div>
-            <div
-              className="shoecare-bottom-right-containers-bottom-left-picture"
-              style={imageTwoStyling}
-            ></div>
-            <div
-              className="shoecare-bottom-right-containers-bottom-right-picture"
-              style={imageTwoStyling}
-            ></div>
+            <Link to="/ShoecareCheckout">
+              <div
+                className="shoecare-bottom-right-containers-bottom-left-picture"
+                style={imageTwoStyling}
+              ></div>
+            </Link>
+            <Link to="/ShoecareCheckout">
+              <div
+                className="shoecare-bottom-right-containers-bottom-right-picture"
+                style={imageTwoStyling}
+              ></div>
+            </Link>
           </div>
         </div>
       </div>
