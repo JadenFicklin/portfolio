@@ -168,6 +168,13 @@ body {
   height: 100px;
   padding: 40px;
   font-size: 18px;
+  transition: 0.6s;
+}
+.shop-men-text {
+  transition: 0.9s;
+}
+.who-we-are-text {
+  transition: 1.2s;
 }
 
 .shop-women-button,
@@ -183,12 +190,15 @@ body {
 
 .shop-women-image {
   background-image: url("../assets/images/Capture-fix.PNG");
+  transition: 0.6s;
 }
 .shop-men-image {
   background-image: url("../assets/images/6925962f_153d\ \(2\).jpg");
+  transition: 0.9s;
 }
 .who-we-are-image {
   background-image: url("../assets/images/Journal_Our_Journey_400x.jpg");
+  transition: 1.2s;
 }
 
 /* best sellers */
@@ -202,7 +212,6 @@ body {
 .outer-best-sellers {
   width: 100%;
   height: 839px;
-
   margin-left: 47px;
   margin-right: 47px;
   display: flex;
@@ -221,12 +230,15 @@ body {
 }
 .first-option-image {
   background-image: url("../assets/images/Capture.PNG");
+  transition: 0.6s;
 }
 .second-option-image {
   background-image: url("../assets/images/Capture3.PNG");
+  transition: 0.9s;
 }
 .third-option-image {
   background-image: url("../assets/images/Capture\ 2.PNG");
+  transition: 1.2s;
 }
 #first-option-text,
 .second-option-text,
@@ -257,10 +269,12 @@ body {
 
 .shoecare-image {
   background-image: url("../assets/images/Capture\ 4.PNG");
+  transition: 0.6s;
 }
 
 .location-image {
   background-image: url("../assets/images/Capture5.PNG");
+  transition: 0.9s;
 }
 
 .shoecare-text,

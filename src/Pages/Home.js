@@ -3,17 +3,46 @@ import React from "react";
 import Nav from "./Nav";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import useScrollPosition from "../hooks/useScrollPosition";
 
 function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const scrollPosition = useScrollPosition();
+  const isScrolling = scrollPosition > 0;
+  console.log(scrollPosition);
+
+  //   const staticStyling = { color: light ? "white" : "#404040" };
+  //   const scrollStyling = {
+  //     backgroundColor: "rgba(255, 255, 255, 0.95)",
+  //   };
+
+  const imageChangeStyling = { marginTop: "200px", opacity: "0%" };
+  const imageStaticStyling = { marginTop: "0px", opacity: "100%" };
+
+  const imageStyling =
+    scrollPosition < 500 ? imageChangeStyling : imageStaticStyling;
+
+  const textChangeStyling = { marginTop: "200px", opacity: "0%" };
+  const textStaticStyling = { marginTop: "-50px", opacity: "100%" };
+
+  const textStyling =
+    scrollPosition < 500 ? textChangeStyling : textStaticStyling;
+
+  const imageTwoStyling =
+    scrollPosition < 1100 ? imageChangeStyling : imageStaticStyling;
+
+  const imageThreeStyling =
+    scrollPosition < 2000 ? imageChangeStyling : imageStaticStyling;
+
   return (
     <>
       <Nav />
       <div className="outer">
         {/* span image */}
-        <div className="span-image">
+        <header className="span-image">
           <div className="image-span-text">
             <span className="you-shop">Footware, made for you</span>
             <span className="eureka">
@@ -27,14 +56,14 @@ function Home() {
               <button className="span-button">SHOP NOW</button>
             </Link>
           </div>
-        </div>
+        </header>
 
         {/* <!-- shop women, shop men, about us --> */}
         <div id="outer-shop">
           <Link to="/Shop">
-            <div className="shop-women-image"></div>
+            <div className="shop-women-image" style={imageStyling}></div>
           </Link>
-          <div className="shop-women-text">
+          <div className="shop-women-text" style={textStyling}>
             Shop for Women
             <Link to="/Shop">
               <a className="shop-women-button">Shop now</a>
@@ -42,18 +71,18 @@ function Home() {
             <Link to="/Shop"></Link>
           </div>
           <Link to="/Shop">
-            <div className="shop-men-image"></div>
+            <div className="shop-men-image" style={imageStyling}></div>
           </Link>
-          <div className="shop-men-text">
+          <div className="shop-men-text" style={textStyling}>
             Shop for Men
             <Link to="/Shop">
               <a className="shop-men-button">Shop now</a>
             </Link>
           </div>
           <Link to="/Shoecare">
-            <div className="who-we-are-image"></div>
+            <div className="who-we-are-image" style={imageStyling}></div>
           </Link>
-          <div className="who-we-are-text">
+          <div className="who-we-are-text" style={textStyling}>
             Shoecare solutions
             <Link to="/Shoecare">
               <a className="who-we-are-button">Shop now</a>
@@ -65,13 +94,13 @@ function Home() {
         <div className="our-best-sellers">Our best sellers</div>
         <div className="outer-best-sellers">
           <Link to="/Checkout">
-            <div className="first-option-image"></div>
+            <div className="first-option-image" style={imageTwoStyling}></div>
           </Link>
           <Link to="/Checkout">
-            <div className="second-option-image"></div>
+            <div className="second-option-image" style={imageTwoStyling}></div>
           </Link>
           <Link to="/Checkout">
-            <div className="third-option-image"></div>
+            <div className="third-option-image" style={imageTwoStyling}></div>
           </Link>
           <div id="first-option-text">
             Metal-free tanned leather <br />
@@ -93,10 +122,10 @@ function Home() {
         {/* <!-- shoecare and locations --> */}
         <div className="outer-shoecare-locations">
           <Link to="/About">
-            <div className="shoecare-image"></div>
+            <div className="shoecare-image" style={imageThreeStyling}></div>
           </Link>
           <Link to="/About">
-            <div className="location-image"></div>
+            <div className="location-image" style={imageThreeStyling}></div>
           </Link>
           <div className="shoecare-text">
             Who we are, our journey explained
@@ -117,7 +146,7 @@ function Home() {
         </div>
 
         {/* <!-- bottom of page --> */}
-        <div className="outer-bottom">
+        <footer className="outer-bottom">
           <div className="customer-care-text">
             <div className="bottom-text-header">Customer Care</div>
             <div className="bottom-text">Shipping and returns</div>
@@ -141,7 +170,7 @@ function Home() {
             <div className="bottom-text">Facebook</div>
             <div className="bottom-text">Newsletter</div>
           </div>
-        </div>
+        </footer>
 
         {/* <!-- end of .outer --> */}
       </div>
