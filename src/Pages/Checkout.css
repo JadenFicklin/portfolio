@@ -67,3 +67,31 @@
 .city {
   width: 300px;
 }
+.checkout-type {
+  color: rgb(143, 143, 143);
+  font-size: 13px;
+}
+.checkout-name {
+  font-size: 28px;
+  margin: 10px 0px;
+}
+.checkout-price {
+  font-size: 14px;
+}
+.checkout-button {
+  width: 30%;
+  height: 40px;
+  font-size: 14px;
+  margin-top: 100px;
+  color: rgb(201, 201, 201);
+  font-weight: 600;
+  background-color: black;
+  transition: 0.2s;
+}
+.checkout-button:hover {
+  color: rgb(255, 255, 255);
+}
+.checkout-paragraph {
+  font-size: 14px;
+  margin: 20px 0px;
+}

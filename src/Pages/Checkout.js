@@ -47,55 +47,16 @@ function Checkout() {
         </div>
         <div className="checkout-outer-input">
           <div className="checkout-item-info">
-            Metal-free tanned leather LT 01 Desert Taupe $149
+            <p className="checkout-type">{shoe.type}</p>
+            <p className="checkout-name">{shoe.name}</p>
+            <p className="checkout-price">${shoe.price}</p>
+            <p className="checkout-paragraph">
+              Everything we do is meant to last. Our designs last. Our products
+              last. This collection of wardrobe essentials comes in six timeless
+              colorways that fit any season...
+            </p>
           </div>
-          <div className="checkout-size"></div>
-          <input
-            type="text"
-            className="checkout-input-box email"
-            placeholder="Email"
-          ></input>
-          <input
-            type="text"
-            className="checkout-input-box first-name"
-            placeholder="First name"
-          ></input>
-          <input
-            type="text"
-            className="checkout-input-box last-name"
-            placeholder="Last name"
-          ></input>
-          <input
-            type="text"
-            className="checkout-input-box address"
-            placeholder="Address"
-          ></input>
-          <input
-            type="text"
-            className="checkout-input-box city"
-            placeholder="City"
-          ></input>
-          <input
-            type="text"
-            className="checkout-input-box country"
-            placeholder="Country"
-          ></input>
-          <input
-            type="text"
-            className="checkout-input-box state"
-            placeholder="State"
-          ></input>
-          <input
-            type="text"
-            className="checkout-input-box zip"
-            placeholder="ZIP code"
-          ></input>
-          <input
-            type="text"
-            className="checkout-input-box phone"
-            placeholder="Phone"
-          ></input>
-          <button className="checkout-checkout-button"></button>
+          <button className="checkout-button">Add to bag</button>
         </div>
       </div>
     </>
