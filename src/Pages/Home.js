@@ -12,11 +12,6 @@ function Home() {
 
   const scrollPosition = useScrollPosition();
 
-  //   const staticStyling = { color: light ? "white" : "#404040" };
-  //   const scrollStyling = {
-  //     backgroundColor: "rgba(255, 255, 255, 0.95)",
-  //   };
-
   const imageChangeStyling = { marginTop: "200px", opacity: "0%" };
   const imageStaticStyling = { marginTop: "0px", opacity: "100%" };
 

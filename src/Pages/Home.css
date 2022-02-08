@@ -92,11 +92,6 @@ body {
   font-size: 160px;
   letter-spacing: 2px;
   position: relative;
-
-  /* animation */
-  /* transition: 3s;
-  animation: fadeInAnimation ease 2s;
-  animation-iteration-count: 1; */
 }
 .eu {
   position: relative;
@@ -113,17 +108,6 @@ body {
   animation: fadeInAnimation 2s;
   animation-iteration-count: 1;
 }
-/* .k {
-  transition: 2s;
-  animation: fadeInAnimation ease .2s;
-  animation-iteration-count: 1;
-}
-.a {
-  transition: 1s;
-  animation: fadeInAnimation ease .2s;
-  animation-iteration-count: 1;
-
-} */
 
 .span-button {
   position: relative;

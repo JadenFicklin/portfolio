@@ -46,14 +46,6 @@ function Login() {
     } else {
       return "user does not exist";
     }
-
-    // variables needed:
-    //   run validate when you click the button -------
-    //   capture the username/password inputs -------
-    // logic needed:
-    //   find the username object
-    //   see if the password from the input matches the password on the user object
-    //   return true if it does, false if it doesn't
   };
 
   const handleChange = (event) => {

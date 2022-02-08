@@ -33,30 +33,6 @@ function Signup() {
     setErrors(validation(values));
   };
 
-  // vanilla code
-  // const postMessage = (body) =>
-  //   axios
-  //     .post("http://localhost:4000/api/usernamepassword", body)
-  //     .then((res) => {
-  //       console.log(res.data);
-  //       alert(res.data)
-  //     });
-  // function submitHandler(e) {
-  //   e.preventDefault();
-
-  //   let getUsername = document.querySelector(".signup-username-box");
-  //   let getPassword = document.querySelector(".signup-password-box");
-
-  //   let bodyObj = {
-  //     getUsername: getUsername.value,
-  //     getPassword: getPassword.value,
-  //   };
-  //   postMessage(bodyObj);
-
-  //   getUsername.value = "";
-  //   getPassword.value = "";
-  // }
-
   return (
     <>
       <Nav />
