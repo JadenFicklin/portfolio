@@ -10,16 +10,75 @@ body {
   flex-wrap: wrap;
 }
 .projects-left-outer {
-  width: 45%;
+  width: 30%;
   height: 100%;
   background-color: #ff9770;
   background-color: #b6ccfe;
   /* background-color: #bfdbf7; */
 }
 .projects-right-outer {
-  width: 55%;
+  width: 70%;
   height: 100%;
   background-color: #ee6c4d;
+  background-color: rgb(65, 65, 65);
+  background-color: #1780a1;
   background-color: white;
-  /* background-color: #1780a1; */
+}
+.project-one {
+  width: 700px;
+  height: 400px;
+  position: absolute;
+  top: 180px;
+  left: 800px;
+  background-image: url("../assets/images/Euka\ \(2\).PNG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  background-size: 110%;
+}
+
+.line {
+  width: 140px;
+  height: 100px;
+  border-bottom: 1px solid rgb(172, 172, 172);
+  position: absolute;
+  top: 280px;
+  left: 620px;
+}
+
+.text-one-header {
+  position: absolute;
+  top: 230px;
+  left: 100px;
+  width: 300px;
+  height: 300px;
+  color: white;
+  font-size: 30px;
+}
+.text-one {
+  position: absolute;
+  top: 330px;
+  left: 100px;
+  width: 400px;
+  height: 300px;
+  color: white;
+  font-size: 20px;
+}
+.text-two {
+  position: absolute;
+  top: 490px;
+  left: 100px;
+  width: 400px;
+  height: 300px;
+  color: white;
+  font-size: 20px;
+}
+.text-three {
+  position: absolute;
+  top: 460px;
+  left: 100px;
+  width: 400px;
+  height: 300px;
+  color: white;
+  font-size: 20px;
 }
