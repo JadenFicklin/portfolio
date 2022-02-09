@@ -13,6 +13,7 @@ function About() {
     <>
       <Nav />
       <div>this is the about page</div>
+      <div className="span-image"></div>
     </>
   );
 }

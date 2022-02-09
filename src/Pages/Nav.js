@@ -18,19 +18,21 @@ function Nav({ light }) {
     <div className="nav" style={navStyling}>
       <div className="nav-first">
         <Link to="/">
-          <button className="euka">Portfolio</button>
+          <button className="home">Home</button>
         </Link>
         {/* projects */}
-        <Link to="/Projects">
-          <button className="projects">Projects</button>
-        </Link>
-        {/* Shoecare */}
-        <Link to="/Contact">
-          <button className="contact">Contact</button>
-        </Link>
-        <Link to="/About">
-          <button className="about-link">About</button>
-        </Link>
+        <div className="links-second">
+          <Link to="/Projects">
+            <button className="projects">Projects</button>
+          </Link>
+          {/* Shoecare */}
+          <Link to="/Contact">
+            <button className="contact">Contact</button>
+          </Link>
+          <Link to="/About">
+            <button className="about-link">About</button>
+          </Link>
+        </div>
       </div>
     </div>
   );

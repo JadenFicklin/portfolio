@@ -12,7 +12,11 @@ function Projects() {
   return (
     <>
       <Nav />
-      <div>This is the projects page</div>
+      <div className="projects-outer">
+        <div className="projects-left-outer"></div>
+        <div className="projects-right-outer"></div>
+        {/* <div className="projects-bottom-outer"></div> */}
+      </div>
     </>
   );
 }

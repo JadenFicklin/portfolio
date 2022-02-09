@@ -1,0 +1,9 @@
+.span-image {
+  margin-left: 900px;
+  width: 900px;
+  height: 900px;
+  background-image: url("../assets/images/myself.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+}
