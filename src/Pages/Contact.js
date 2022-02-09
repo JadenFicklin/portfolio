@@ -1,10 +1,9 @@
-import "./About.css";
+import "./Contact.css";
 import React from "react";
 import Nav from "./Nav";
 import { useEffect } from "react";
-import useScrollPosition from "../hooks/useScrollPosition";
 
-function About() {
+function Shoecare() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -12,9 +11,9 @@ function About() {
   return (
     <>
       <Nav />
-      <div>this is the about page</div>
+      <div>this is the Contact page</div>
     </>
   );
 }
 
-export default About;
+export default Shoecare;
