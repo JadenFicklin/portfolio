@@ -21,7 +21,7 @@ function Home() {
   return (
     <>
       <Nav />
-      <div>this is the home page</div>
+      <div>this is the home page test</div>
     </>
   );
 }
