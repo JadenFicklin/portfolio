@@ -10,8 +10,12 @@ function Shoecare() {
 
   return (
     <>
-      <Nav />
-      <div>this is the Contact page</div>
+      <Nav light={true} />
+
+      <div className="outer">
+        <div className="contact-outer-left"></div>
+        <div className="contact-outer-right"></div>
+      </div>
     </>
   );
 }

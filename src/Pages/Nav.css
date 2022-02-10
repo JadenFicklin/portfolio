@@ -54,11 +54,13 @@ a {
   position: fixed;
 }
 .links-second {
-  width: 20%;
+  position: absolute;
+  top: 10px;
+  left: 470px;
+  width: 300px;
   font-size: 18px;
   /* background-color: gray; */
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-right: 90px;
 }

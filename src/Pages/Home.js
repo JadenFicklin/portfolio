@@ -36,9 +36,7 @@ function Home() {
           </div>
           <div className="about-me-paragraph-two">( open to remote work )</div>
         </div>
-        <div className="home-right-outer">
-          {/* <div class="span-image-backdrop"></div> */}
-        </div>
+        <div className="home-right-outer"></div>
         <Link to="/Projects">
           <button className="home-see-work">SEE MY WORK</button>
         </Link>

@@ -13,7 +13,7 @@ body {
   width: 45%;
   height: 100%;
   background-color: #ff9770;
-  background-color: #b6ccfe;
+  background-color: #001444;
   /* background-color: #bfdbf7; */
 }
 .home-right-outer {
@@ -83,7 +83,7 @@ body {
   top: 620px;
   left: 120px;
   width: 530px;
-  height: 400px;
+  height: 50px;
   color: white;
   font-size: 20px;
   font-weight: 400;
@@ -112,16 +112,17 @@ body {
   width: 180px;
   height: 45px;
   background-color: white;
-  color: #b6ccfe;
+  color: #001444;
   font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 500;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 .home-see-work:hover {
-  color: #93b3ff;
+  background-color: #001444;
+  color: rgb(255, 255, 255);
 }
 
 .html-logo {

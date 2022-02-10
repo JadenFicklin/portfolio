@@ -11,7 +11,7 @@ function Projects() {
 
   return (
     <>
-      <Nav />
+      <Nav light={true} />
       <div className="projects-outer">
         <div className="projects-left-outer">
           <div className="text-one-header">Project 1</div>
@@ -21,9 +21,16 @@ function Projects() {
           </div>
           <div className="text-two">Time frame: Jan 31 - Feb 10</div>
           <div className="text-three">Tech stack: React</div>
+          <div className="text-two-header">Project 2</div>
+          <div className="text-three-header">Project 3</div>
         </div>
         <div className="projects-right-outer">
-          <div className="line"></div>
+          <div className="top-bar"></div>
+
+          <div className="box-border-bar"></div>
+          <div className="box-border-bar-two"></div>
+          <div className="box-border-bar-three"></div>
+          {/* <div className="line"></div> */}
           <div className="project-one"></div>
         </div>
       </div>
