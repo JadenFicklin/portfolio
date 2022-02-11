@@ -119,8 +119,6 @@ body {
   opacity: 95%;
   z-index: 1;
 }
-.span-image-backdrop:hover {
-}
 
 .home-see-work {
   position: absolute;
@@ -144,15 +142,18 @@ body {
 
 .html-logo {
   width: 220px;
-  height: 100px;
-  background-image: url("../assets/images/html5-logo-31819.png");
+  height: 80px;
+  background-image: url("../assets/images/slack-html-css-javascript-black-number-symbol-text-logo-transparent-png-1592181.png");
   background-size: cover;
   background-position: bottom;
   background-repeat: none;
   opacity: 95%;
   position: relative;
-  top: 30px;
+  top: 36px;
   left: 120px;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  opacity: 20%;
 }
 .html-nodejs {
   width: 100px;
@@ -163,11 +164,14 @@ body {
   background-repeat: none;
   position: absolute;
   top: 890px;
-  left: 450px;
+  left: 350px;
   display: flex;
   justify-content: center;
   color: rgb(137, 196, 0);
   font-weight: 900;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  opacity: 30%;
 }
 .react-logo {
   width: 70px;
@@ -178,14 +182,18 @@ body {
   background-repeat: none;
   position: absolute;
   top: 910px;
-  left: 640px;
+  left: 460px;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  opacity: 46%;
 }
 .react-text {
   font-weight: 900;
-  color: rgb(0, 176, 207);
+  color: rgb(100, 100, 100);
   position: absolute;
   top: 890px;
-  left: 650px;
+  left: 473px;
+  font-size: 14px;
 }
 
 .circle-one {
@@ -218,4 +226,105 @@ body {
   background-position: center;
   background-repeat: none;
   background-size: 110%;
+  margin-bottom: 100px;
+}
+.skills {
+  width: 700px;
+  height: 100px;
+  /* background-color: lightgray; */
+  margin-top: 400px;
+}
+
+.skills-html-logo {
+  width: 300px;
+  height: 100px;
+  background-image: url("../assets/images/html5-logo-31819.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+  opacity: 95%;
+}
+.skills-html-nodejs {
+  width: 140px;
+  height: 140px;
+  background-image: url("../assets/images/javascript-39413.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+  position: relative;
+  top: -126px;
+  left: 300px;
+}
+.skills-react-logo {
+  width: 96px;
+  height: 86px;
+  background-image: url("../assets/images/PinClipart.com_follow-directions-clip-art_5374089.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+  position: relative;
+  top: -100px;
+  left: 330px;
+}
+
+.text-one-header {
+  position: relative;
+  top: -560px;
+  width: 300px;
+  height: 300px;
+  /* color: red; */
+  font-size: 30px;
+}
+.text-one {
+  position: absolute;
+  top: 500px;
+  width: 600px;
+  height: 100px;
+  /* color: red; */
+  font-size: 20px;
+}
+.text-two {
+  position: absolute;
+  top: 560px;
+  width: 400px;
+  height: 50px;
+  /* color: red; */
+  font-size: 20px;
+}
+.text-three {
+  position: absolute;
+  top: 590px;
+  width: 400px;
+  height: 50px;
+  /* color: red; */
+  font-size: 20px;
+}
+.github {
+  width: 300px;
+  height: 71.6px;
+  background-image: url("../assets/images/kindpng_1280357.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+  position: absolute;
+  top: 900px;
+  left: 900px;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  opacity: 50%;
+}
+
+.linkedin {
+  width: 300px;
+  height: 71.6px;
+  background-image: url("../assets/images/pngfind.com-linkedin-logo-png-1232187.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+  position: absolute;
+  top: 905px;
+  left: 1300px;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  opacity: 40%;
 }

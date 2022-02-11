@@ -17,7 +17,7 @@ function Projects() {
           <div className="text-one-header">Project 1</div>
           <div className="text-one">
             Euka is an ecommerse website designed to sell shoes created as my
-            capstone project after the 8 week mark in DevMountain
+            capstone project for the 8 week mark in DevMountain
           </div>
           <div className="text-two">Time frame: Jan 31 - Feb 10</div>
           <div className="text-three">Tech stack: React</div>

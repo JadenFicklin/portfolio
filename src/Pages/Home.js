@@ -47,7 +47,20 @@ function Home() {
         </div>
         <div className="home-right-outer"></div>
         <div className="home-right-outer-projects" style={position}>
-          <div className="project-one"></div>
+          <div className="project-one">
+            <div className="skills">
+              <div className="skills-html-logo"></div>
+              {/* <div className="skills-html-nodejs"></div> */}
+              <div className="skills-react-logo"></div>
+            </div>
+            <div className="text-one-header">Project 1</div>
+            <div className="text-one">
+              Euka is an ecommerse website designed to sell shoes created as my
+              capstone project for the 8 week mark in DevMountain
+            </div>
+            <div className="text-two">Time frame: Jan 31 - Feb 10</div>
+            <div className="text-three">Tech stack: React</div>
+          </div>
         </div>
         <div className="home-right-outer-contact"></div>
         <div className="home-right-outer-about"></div>
@@ -63,9 +76,17 @@ function Home() {
           <div className="html-nodejs">Node JS</div>
           <div className="react-logo"></div>
           <div className="react-text">REACT</div>
+          <a
+            href="https://github.com/JadenFicklin"
+            target="_blank"
+            className="github"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/jaden-ficklin-b1686a21a/"
+            target="_blank"
+            className="linkedin"
+          ></a>
         </div>
-        {/* <div className="circle-one"></div> */}
-        {/* <div className="circle-two"></div> */}
       </div>
     </>
   );
