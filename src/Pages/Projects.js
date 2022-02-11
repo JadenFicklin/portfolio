@@ -25,7 +25,7 @@ function Projects() {
           <div className="text-three-header">Project 3</div>
         </div>
         <div className="projects-right-outer">
-          <div className="top-bar"></div>
+          {/* <div className="top-bar"></div> */}
 
           <div className="box-border-bar"></div>
           <div className="box-border-bar-two"></div>

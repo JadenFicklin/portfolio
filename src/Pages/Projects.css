@@ -10,13 +10,12 @@ body {
   flex-wrap: wrap;
 }
 .projects-left-outer {
-  width: 45%;
+  width: 45.4%;
   height: 100%;
 
   background-color: #001444;
 }
 .projects-right-outer {
-  width: 55%;
   height: 100%;
   background-color: white;
 }

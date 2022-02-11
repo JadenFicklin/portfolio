@@ -15,3 +15,34 @@
   height: 100%;
   background-color: rgb(255, 255, 255);
 }
+.contact-text-one {
+  color: white;
+  font-size: 30px;
+  position: relative;
+  top: 200px;
+  left: 100px;
+  font-weight: 300;
+}
+
+.contact-text-two {
+  color: white;
+  font-size: 30px;
+  position: relative;
+  top: 200px;
+  left: 100px;
+  font-weight: 300;
+}
+.contact-text-three {
+  color: white;
+  font-size: 30px;
+  position: relative;
+  top: 260px;
+  left: 100px;
+}
+.contact-text-four {
+  color: white;
+  font-size: 30px;
+  position: relative;
+  top: 360px;
+  left: 15px;
+}

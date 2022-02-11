@@ -1,5 +1,5 @@
 import "./Home.css";
-import React from "react";
+import React, { useState } from "react";
 import Nav from "./Nav";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
@@ -10,17 +10,26 @@ function Home() {
     window.scrollTo(0, 0);
   }, []);
 
-  const scrollPosition = useScrollPosition();
+  const [buttonText, setButtonText] = useState("SEE MY WORK");
+  const [position, setPosition] = useState({
+    position: "absolute",
+    left: "100%",
+    opacity: "0%",
+  });
 
-  const imageChangeStyling = { marginTop: "200px", opacity: "0%" };
-  const imageStaticStyling = { marginTop: "0px", opacity: "100%" };
-
-  const imageStyling =
-    scrollPosition < 500 ? imageChangeStyling : imageStaticStyling;
+  //function
+  function projectsPosition() {
+    setPosition({
+      position: "absolute",
+      left: "865px",
+      opacity: "100%",
+    });
+    setButtonText("CONTACT");
+  }
 
   return (
     <>
-      <Nav light={true} />
+      {/* <Nav light={true} /> */}
       <div className="home-outer">
         <div className="home-left-outer">
           <div className="home-first-name">
@@ -37,9 +46,18 @@ function Home() {
           <div className="about-me-paragraph-two">( open to remote work )</div>
         </div>
         <div className="home-right-outer"></div>
-        <Link to="/Projects">
-          <button className="home-see-work">SEE MY WORK</button>
-        </Link>
+        <div className="home-right-outer-projects" style={position}>
+          <div className="project-one"></div>
+        </div>
+        <div className="home-right-outer-contact"></div>
+        <div className="home-right-outer-about"></div>
+
+        <button className="home-see-work" onClick={() => projectsPosition()}>
+          {buttonText}
+        </button>
+
+        {/* <button className="contact-info-button">CONTACT</button> */}
+
         <div className="home-bottom-outer">
           <div className="html-logo"></div>
           <div className="html-nodejs">Node JS</div>
